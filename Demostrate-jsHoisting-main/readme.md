@@ -1,0 +1,1 @@
+working of hoisting of javascript
