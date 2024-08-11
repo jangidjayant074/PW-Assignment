@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+/* ... (same as before) */
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* font-size: 40px; */
+    gap: 10px;
+}
+
+#reset {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #bd2130;
+}
+

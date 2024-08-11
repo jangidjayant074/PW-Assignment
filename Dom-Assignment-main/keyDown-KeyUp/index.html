@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press Color Change</title>
+    <style>
+        #container {
+  height: 100vh;
+}
+
+#display {
+  font-size: 50px;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="display">Press any key :)</div>
+    </div>  
+    <script>
+        let container = document.getElementById("container");
+let display = document.getElementById("display");
+
+
+document.addEventListener("keydown", function (f) {
+  display.style.color = "red";
+  display.innerText = f.key + " is keyDown";
+});
+
+
+document.addEventListener("keyup", function (f) {
+  display.style.color = "green";
+  display.innerText = f.key + " is keyUp";
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover Event</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hover-div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="hover-div"></div>
+
+    <script>
+     
+        const hoverDiv = document.getElementById('hover-div');
+
+      
+        function onMouseHover() {
+            
+            hoverDiv.style.backgroundColor = 'lightgreen';
+        }
+
+   
+        hoverDiv.addEventListener('mouseover', onMouseHover);
+
+        
+    </script>
+</body>
+</html>

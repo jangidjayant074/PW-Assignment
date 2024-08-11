@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+</head>
+<body>
+    <label for="text-input">Type something:</label>
+    <input type="text" id="text-input">
+    <div id="char-count">Character count: 0</div>
+
+    <script>
+        // Get references to the input and result elements
+        const textInput = document.getElementById('text-input');
+        const charCount = document.getElementById('char-count');
+
+        // Function to handle keypress event
+        function onKeyPress() {
+            // Get the value of the input field
+            const inputValue = textInput.value;
+
+            // Calculate the character count
+            const characterCount = inputValue.length;
+
+            // Display the character count in the result element
+            charCount.textContent = `Character count: ${characterCount}`;
+        }
+
+        // Add a keypress event listener to the input
+        textInput.addEventListener('keypress', onKeyPress);
+    </script>
+</body>
+</html>
